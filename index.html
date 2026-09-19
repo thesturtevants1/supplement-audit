@@ -136,7 +136,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;labUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.skool.com/the-menopause-lab/about&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Links&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;labUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.skool.com/the-menopause-lab?utm_source=supplement-audit-page&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Links&quot;}}">
 class Component extends DCLogic {
   state = { embedOk: false, playing: false };
 
@@ -164,7 +164,7 @@ class Component extends DCLogic {
         e.preventDefault();
         this.setState({ playing: true });
       },
-      labUrl: this.props.labUrl ?? "https://www.skool.com/the-menopause-lab/about"
+      labUrl: this.props.labUrl ?? "https://www.skool.com/the-menopause-lab?utm_source=supplement-audit-page"
     };
   }
 }
